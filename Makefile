@@ -1,7 +1,7 @@
 SHAREDIR=/usr/share/whalebuilder
 
 DEBRELEASES=sid stretch jessie jessie/backports wheezy wheezy/backports squeeze \
-      experimental unstable testing stable stable/backports oldstable/backports
+      experimental unstable testing stable stable/backports oldstable oldstable/backports
 
 UBUNTURELEASES=latest precise trusty utopic vivid wily
 
