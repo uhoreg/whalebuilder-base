@@ -8,7 +8,7 @@ SHARE_DIR = "/usr/share/whalebuilder"
 class Templater
   def write (filename)
     b = binding
-    result = ERB.new(File.read(File.join(SHARE_DIR, self.class::TEMPLATE_FILE))).result b
+    result = ERB.new(File.read(File.join(SHARE_DIR, self.class::TEMPLATE_FILE)), nil, "-").result b
     File.open(filename, "w") do |file|
       file.write result
     end
@@ -22,6 +22,7 @@ class Dockerfile < Templater
     @tag = options[:release]
     @maintainer = options[:maintainer]
     @repository = options[:repository]
+    @hooks = []
   end
 end
 
