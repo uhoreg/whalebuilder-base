@@ -1,7 +1,7 @@
 SHAREDIR=/usr/share/whalebuilder
 
 DIST=debian
-RELEASES=sid stretch jessie jessie/backports wheezy wheezy/backports squeeze \
+RELEASES=sid buster stretch stretch/backports jessie jessie/backports wheezy wheezy/backports squeeze \
       experimental unstable testing stable stable/backports oldstable oldstable/backports
 
 all: $(foreach d, $(RELEASES), $(DIST)/$d/Dockerfile)
