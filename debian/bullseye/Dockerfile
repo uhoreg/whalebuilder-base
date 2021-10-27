@@ -1,4 +1,4 @@
-FROM debian:testing
+FROM debian:bullseye
 MAINTAINER Hubert Chathi <hubert@uhoreg.ca>
 
 # Persistent

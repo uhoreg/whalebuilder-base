@@ -1,4 +1,4 @@
-FROM debian:testing
+FROM ubuntu:hirsute
 MAINTAINER Hubert Chathi <hubert@uhoreg.ca>
 
 # Persistent

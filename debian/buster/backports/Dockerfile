@@ -1,4 +1,4 @@
-FROM debian:testing
+FROM debian:buster-backports
 MAINTAINER Hubert Chathi <hubert@uhoreg.ca>
 
 # Persistent
