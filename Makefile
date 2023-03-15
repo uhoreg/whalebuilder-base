@@ -3,7 +3,7 @@ SHAREDIR=/usr/share/whalebuilder
 DEBIAN_RELEASES=sid bookworm bullseye bullseye/backports buster buster/backports stretch jessie \
       experimental unstable testing stable stable/backports oldstable oldstable/backports
 
-UBUNTU_RELEASES=impish hirsute focal xenial bionic
+UBUNTU_RELEASES=kinetic jammy focal xenial bionic
 
 all: $(foreach d, $(DEBIAN_RELEASES), debian/$d/Dockerfile) $(foreach d, $(UBUNTU_RELEASES), ubuntu/$d/Dockerfile)
 
